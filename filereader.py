@@ -9,7 +9,7 @@ print "file closed =", filex.closed
 print filex.name, "opened" 
 print "writing mode", filex.mode
 
-user_input = raw_input ("enter string to append to file\n")
+user_input = raw_input ("enter string to write to file\n")
 filex.write(user_input)
 filex.write("\n")
 filex.close()
