@@ -17,6 +17,7 @@ read filename #name of file
                  # Integer.
 let "k += 1"
 echo "k = $k "           # a = 2335         
-tail -n +$k $filename | cat > "temp_file_1.txt"
+tail -n +$k $filename | head -n -$m | cat > "temp_file_1.txt"
+#head -n -$m "temp_file_1.txt"
 #want top 26 lines and bottom 2 lines removed everything else stays
 #TAIL | HEAD | cat 
