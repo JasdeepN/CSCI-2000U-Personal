@@ -6,9 +6,15 @@ def has_no_e(input_string):
 		if (x == 'e'):
 			print ('true')
 			return
-
 	print('false')
 		
 
-
-has_no_e(raw_input()) #terminal input 
+#opens the file for reading 
+def main():
+	filex  = open('gadsby.txt', "r") #open file in read only mode
+	for line in filex: #sends line by line to has_no_e
+		has_no_e(line);
+	filex.close() #close the file
+		
+main()
+#has_no_e(raw_input()) #terminal input 
