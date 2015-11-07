@@ -1,4 +1,6 @@
 #python
+#Jasdeep Nijjar
+#100493157
 #finds weather file contains the letter e returns true if it finds the letter 'e'
 def has_no_e(input_string):
 	for x in input_string:
